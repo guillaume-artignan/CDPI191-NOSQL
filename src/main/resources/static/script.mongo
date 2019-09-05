@@ -1,0 +1,11 @@
+var noms = ["FERNANDEZ", "GARCIA", "THEO", "LEBOULANGER"];
+var prenoms = ["FERNANDEZ", "GARCIA", "THEO", "LEBOULANGER"];
+var pays = ["FRANCE", "TAIWAN", "CHINE", "ANGLETERRE"];
+
+for (var i = 0;i<200;i++){
+    var nom = noms[Math.floor(Math.random()*noms.length)];
+    var prenom = prenoms[Math.floor(Math.random()*prenoms.length)];
+    var country = pays[Math.floor(Math.random()*pays.length)];
+    var age = Math.floor(Math.random()*100);
+    db.personne.insert({'nom' : nom, 'prenom' : prenom, 'pays' : country, 'age' : age});
+}
